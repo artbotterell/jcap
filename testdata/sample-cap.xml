@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>NWS-IDP-PROD-SAMPLE-0001</identifier>
+  <sender>w-nws.webmaster@noaa.gov</sender>
+  <sent>2026-08-07T12:00:00+00:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <info>
+    <category>Met</category>
+    <event>Sample Test Event</event>
+    <urgency>Expected</urgency>
+    <severity>Moderate</severity>
+    <certainty>Likely</certainty>
+    <headline>Sample alert for feedhook tests</headline>
+  </info>
+</alert>
