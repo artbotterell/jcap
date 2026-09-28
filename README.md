@@ -24,6 +24,13 @@ Both return `Err(String)` if the input is not XML or its root is not `<alert>`.
   accepted and the XML-DSig `<Signature>` is never carried over.
 - `<resource>` is not yet modeled.
 
+## Used by
+
+- [ipaws44client](https://github.com/artbotterell/ipaws44client) (`ipawsClient`),
+  a command-line client for an IPAWS alert relay on 44net: it uses
+  `parse_alert` to read raw CAP XML alerts so it can match their SAME codes,
+  polygons, circles and UGC codes against a Maidenhead grid square.
+
 ## License
 
 MIT; see [LICENSE](LICENSE).
