@@ -34,6 +34,14 @@ Both return `Err(String)` if the input is not XML or its root is not `<alert>`.
   `parse_alert` to read raw CAP XML alerts so it can match their SAME codes,
   polygons, circles and UGC codes against a Maidenhead grid square.
 
+## Related
+
+- The gis project (not public): crosswalks and geometry tools between
+  Maidenhead grid squares, US counties, NWS forecast zones and CAP alert
+  polygons. Its polygon tools take the same `"lat,lon lat,lon ..."` strings
+  that jcap emits in `polygon`, and its county and zone boundaries back the
+  ipaws_on_44 relay's grid-square lookup.
+
 ## License
 
 MIT; see [LICENSE](LICENSE).
