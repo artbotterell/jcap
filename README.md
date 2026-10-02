@@ -27,8 +27,9 @@ Both return `Err(String)` if the input is not XML or its root is not `<alert>`.
 ## Used by
 
 - The ipaws_on_44 relay, which publishes FEMA IPAWS alerts to licensed radio
-  amateurs over 44net (`44.27.128.55`, reachable only from 44net): its MQTT
-  topic `ipaws/cap/json` carries each alert as produced by `to_json`.
+  amateurs over 44net (MQTT at `44.27.128.55:1883`, open to 44net addresses
+  only; its page at <http://44.27.128.55/> is public): its MQTT topic
+  `ipaws/cap/json` carries each alert as produced by `to_json`.
 - [ipaws44client](https://github.com/artbotterell/ipaws44client) (`ipawsClient`,
   current release [v0.2.2](https://github.com/artbotterell/ipaws44client/releases/tag/v0.2.2)),
   a command-line client for an IPAWS alert relay on 44net: it uses
